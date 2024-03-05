@@ -8,7 +8,7 @@ h1 {
 .parent {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 150px 150px 150px; /* hieronder handiger*/ 
+    grid-template-columns: 150px 150px 150px; /* hieronder handiger*/
     grid-template-rows: repeat(3, 150px);
 }
 .parent > div {
@@ -20,5 +20,16 @@ h1 {
     font-family: sans-serif;
     font-size: 24px;
     font-weight: bold;
-
+}
+input {
+    display: grid;
+    place-items: center;
+    margin: auto;
+    padding: 0px;
+    border: 0px;
+    background-color: #EFCB68;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    width: 20px;
 }

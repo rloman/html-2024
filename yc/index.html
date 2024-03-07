@@ -4,14 +4,33 @@
     <meta charset="UTF-8">
     <title>:: Demo HTML ::</title>
     <style>
-        textarea  {
+        textarea {
             background-color: red;
             border: 3px solid green;
+        }
+
+        span {
+            cursor: pointer;
         }
     </style>
     <script>
         function mijnfunctie() {
             alert("Hij doet het");
+            console.log("ja hoor");
+            let person = {
+                name: 'Raymond',
+                age: 55
+            }
+            console.table(person);
+        }
+
+        function doInput() {
+            let input1 = document.getElementById('input1');
+            let value = input1.value;
+            let div = document.getElementById('output1');
+            div.innerHTML += "Welkom " + value;
+            input1.value = '';
+
         }
 
     </script>
@@ -36,6 +55,28 @@ water ::= H<sub>2</sub>O
     <li>Syntax vaardigheid</li>
     <li>Bibliotheek bekendheid</li>
 </ul>
+
+
+<hr>
+<b>Click demo</b> =>
+<div id="output1"></div>
+<br>
+<input type="text" id="input1"/><br>
+<input type="button" value="Opslaan" onclick="doInput();"/><br>
+
+
+<div>
+
+    <dl>
+        <dt>Functionele doelstelling</dt>
+        <dd>Wat  - Concreet - Opknippen mogelijk dan moet je opknippen - Niet technisch</dd>
+        <dt>Technische strategie</dt>
+        <dd>Hoe - Technische termen - Functionele aanpassen mag je NIET aanpassen</dd>
+        <dt>Coderen</dt>
+        <dd>Programmeren</dd>
+    </dl>
+
+</div>
 
 </body>
 </html>

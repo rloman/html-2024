@@ -1,3 +1,40 @@
+function demoArray() {
+
+    /*
+    Een array in JS maak je met een []
+     */
+    let numbers = [8, 1, 12, 34, 55, 105, 22, 19];
+    /*
+    let op: arrays zijn indexed based, dus het eerste element staat op adres: 0
+    het tweede op adres: 1,
+    het derde op adres: 2.
+     */
+
+    console.log(numbers[0]);
+    console.log(numbers[3]);
+    console.assert(numbers[2] == 12)
+
+    // Twee manieren om over de array te lopen.
+    // Basic
+    for (let i = 0; i < numbers.length; i++) {
+        console.log("Het element op adres: " + i + " is: " + numbers[i]);
+    }
+
+    // Andere manier is de for each
+    for (let number of numbers) {
+        console.log("Het number is: "+number)
+    }
+    // let op een struikelblok!!!
+    for (let number in numbers) { // in: index, of: O(bject), dus hier is number dus de index.
+        console.log("Het number op plek: "+number+" is gelijk aan: "+numbers[number])
+    }
+
+    // Opdrachtje: maak een array van namen en loop er overheen met een basic loop en met een foreach loop
+
+
+
+}
+
 function ifElseDemo(leeftijd) {
 
     if (leeftijd < 20) {

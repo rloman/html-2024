@@ -1,0 +1,19 @@
+body {
+    background-color: #f7f7f7;
+}
+textarea {
+    background-color: red;
+}
+p {
+    font-size: 24px;
+}
+
+div {
+    color: grey;
+}
+.safe {
+    color: green;
+}
+#personalia {
+    color: blueviolet;
+}

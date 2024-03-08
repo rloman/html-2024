@@ -1,0 +1,10 @@
+h3 {
+    color:purple;
+}
+p {
+    color:red;
+}
+
+p:hover {
+    color: blue;
+}

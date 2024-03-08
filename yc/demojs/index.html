@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:: Demo JS ::</title>
+    <script src="lib.js"></script>
+</head>
+<body>
+<script>
+    hello("Joost");
+    hello("Raymond");
+    hello("Annemarie");
+    hello("Vrijdag");
+
+    let result = add(3, 4);
+    console.log(result);
+    var other = add("7", "7");
+    console.log(other);
+    console.log(typeof (other));
+    let welEenGetal = parseInt(other); // dus welEenGetal is nu een number
+    console.log(welEenGetal + 1);
+    console.log("" + welEenGetal + 2);
+    var watIsDit = +other + 3; // wetende dat other is hier: "77"
+    console.log(watIsDit);
+
+    {
+        let a = 3;
+        const btw = 21.0;
+        console.log(a); // vout
+    }
+
+</script>
+
+</body>
+</html>

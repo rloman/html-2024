@@ -29,14 +29,14 @@ function demoArray() {
         console.log("Het number op plek: "+number+" is gelijk aan: "+numbers[number])
     }
 
-    // Opdrachtje: maak een array van namen en loop er overheen met een basic loop en met een foreach loop
-
-
-
+    // string charAt
+    let firstName = "Vrijdag";
+    for (let i = 0; i < firstName.length; i++) {
+        console.log(firstName[i]);
+    }
 }
 
 function ifElseDemo(leeftijd) {
-
     if (leeftijd < 20) {
         console.log("U bent nog te jong");
     } else {
@@ -51,7 +51,6 @@ function ifElseDemo(leeftijd) {
     if (leeftijd < 20) {
         console.log("OK");
     }
-
     // basic for
     /*
      syntax:

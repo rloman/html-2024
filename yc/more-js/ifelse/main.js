@@ -14,4 +14,16 @@ function ifElseDemo(leeftijd) {
     if (leeftijd < 20) {
         console.log("OK");
     }
+
+    // basic for
+    /*
+     syntax:
+     for(initialisatie;conditie;increment)
+     */
+    for (let i = 0; i < 10; i++) { // i++ is hetzelfde als i = i+1
+        console.log(i);
+    }
+    for (let i = 10; i > 0; i--) {
+        console.log(i);
+    }
 }
